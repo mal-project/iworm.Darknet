@@ -1,0 +1,34 @@
+;-----------------------------------------------------------------------
+includes    macro   incl:vararg
+            for i, <incl>
+                if  @InStr(1, <i>, <.>)
+                    if  @InStr(1, <i>, <.lib>)
+                        includelib  i
+                    else
+                        include     i
+                    endif
+                else
+                    include     i.inc
+                    includelib  i.lib
+                endif
+            endm
+endm
+
+;-----------------------------------------------------------------------
+host_entry_first_entry  macro   he:REQ
+    mov     eax, [eax+0Ch]
+    mov     eax, [eax]
+    mov     eax, [eax]
+endm
+
+;-----------------------------------------------------------------------
+m2m     macro   dest, src:req
+    push    src
+    pop     dest
+endm
+
+;-----------------------------------------------------------------------
+return  macro   reg:REQ
+    mov     dword ptr [esp+28], reg
+endm
+;-----------------------------------------------------------------------

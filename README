@@ -1,0 +1,12 @@
+DarkNet 0.1
+
+          [ CODE IS IN VERY EARLY DEVELOPMENT STAGE ! ]
+
+DarkNet botnet/worm aims to be a distributed anonymous P2P-based simple
+botnet written in Assembly with Freenet-based message routing and no central
+bootstraping point.
+
+This program has been written for educational proposes hence code is highly
+commented and explained. See also the documentation for further details.
+
+Asphyxia//MAL

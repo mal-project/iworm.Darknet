@@ -1,0 +1,8 @@
+DarkNet 0.2
+----------
+[*] Define back-up bootstraping point: webcache (dyn ip/no ip), irc, none
+[*] Cryptographic authentication for messages (broadcasting only)
+[*] Node re-assembly routines, worm routines (define node as compagnion or worm itself)
+
+[-] Comunication with Tor-hidden services (as bootstraping point?)
+[-] Plug-in system
